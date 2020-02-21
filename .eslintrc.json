@@ -3,7 +3,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb-base"],
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -12,19 +12,8 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "plugins": ["prettier"],
   "rules": {
-    "no-console": "error",
-    "semi": "off",
-    "import/prefer-default-export": "off",
-    "no-empty-pattern": "off",
-    "import/no-cycle": "off",
-    "import/no-duplicates": "off",
-    "no-empty-function": "off",
-    "no-underscore-dangle": "off",
-    "no-useless-constructor": "off",
-    "class-methods-use-this": "off",
-    "no-empty-interface": "off",
-    "ordered-imports": "off",
-    "object-literal-sort-keys": "off"
+    "import/no-named-export": 0
   }
 }
